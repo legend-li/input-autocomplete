@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>autocomplete</title>
+		<style>
+			.box{
+				position: relative;
+				width: 200px;
+				height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./build/autocomplete.min.encrypt.js"></script>
+		<script>
+			$('.box').autocomplete({
+				width: '200px',
+				height: '30px',
+				placeholder: '请输入搜索字段',
+				onInput: function(key, appendList) {
+					// 用法1：
+					var list = ['大西瓜','菠萝','香蕉','苹果'];
+					appendList(list);
+
+					// 用法2：
+					// $.post('http://rap.shangxiaxue.com/mockjs/4/driver/task/special_option?format=json', {
+					// 	key: key
+					// }, function(data, status) {
+					// 	if(data.data.length>0){
+					// 		appendList(data.data);
+					// 	}
+					// })
+				},
+				callback: function(val) {
+					// console.log('input输入框为：', val);
+				}
+			});
+		</script>
+	</body>
+</html>
