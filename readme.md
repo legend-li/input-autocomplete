@@ -8,32 +8,32 @@
 - example.html是用法例子
  
 # 用法：
-  引入的是开发版autocomplete插件: <script src="xx/autocomplete.js"></script>
-  引入的是压缩版autocomplete插件: <script src="xx/autocomplete.min.js"></script>
-  引入的是压缩加密版autocomplete插件: <script src="xx/autocomplete.min.encrypt.js"></script>
-  $('.box').autocomplete({
- 	width: '200px',
- 	height: '30px',
- 	placeholder: '请输入搜索字段',
- 	onInput: function(key, appendList) {
-		// 用法1：
- 		 var list = ['大西瓜','菠萝','香蕉','苹果'];
- 		 appendList(list);
+- 引入的是开发版autocomplete插件: <script src="xx/autocomplete.js"></script>
+- 引入的是压缩版autocomplete插件: <script src="xx/autocomplete.min.js"></script>
+- 引入的是压缩加密版autocomplete插件: <script src="xx/autocomplete.min.encrypt.js"></script>
+- $('.box').autocomplete({
+-	width: '200px',
+- 	height: '30px',
+- 	placeholder: '请输入搜索字段',
+-	onInput: function(key, appendList) {
+- 		// 用法1：
+-  		 var list = ['大西瓜','菠萝','香蕉','苹果'];
+-  		 appendList(list);
  
- 		// 用法2：
- 		// $.post('http://rap.shangxiaxue.com/mockjs/4/driver/task/special_option?format=json', {
- 		// 	key: key
- 		// }, function(data, status) {
- 		// 	if(data.data.length>0){
- 		// 		appendList(data.data);
- 		// 	}
- 		// })
- 	},
- 	callback: function(val) {
- 		//console.log('input输入框为：', val);
-  	}
-  });
-  注意：.box元素的position值必须为relative或者absolute,overflow不能为hidden
+- 		// 用法2：
+- 		// $.post('http://rap.shangxiaxue.com/mockjs/4/driver/task/special_option?format=json', {
+- 		// 	key: key
+- 		// }, function(data, status) {
+- 		// 	if(data.data.length>0){
+- 		// 		appendList(data.data);
+- 		// 	}
+- 		// })
+- 	},
+- 	callback: function(val) {
+- 		//console.log('input输入框为：', val);
+-  	}
+-  });
+-  注意：.box元素的position值必须为relative或者absolute,overflow不能为hidden
 
 # API：
   options: {
