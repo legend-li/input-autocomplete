@@ -2,10 +2,10 @@
 # 日期：2017/04/21
 # Email: 634401745@qq.com
 
-# 插件功能：autocomplete.js是用来提供输入框智能补全搜索内容的，依赖于jQuery。
+- 插件功能：autocomplete.js是用来提供输入框智能补全搜索内容的，依赖于jQuery。
 
-# build目录下面是产出的autocomplete.js插件
-# example.html是用法例子
+- build目录下面是产出的autocomplete.js插件
+- example.html是用法例子
  
 # 用法：
   引入的是开发版autocomplete插件: <script src="xx/autocomplete.js"></script>
