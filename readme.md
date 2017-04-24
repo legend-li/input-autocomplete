@@ -7,7 +7,7 @@
 - build目录下面是产出的autocomplete.js插件
 - example.html是用法例子
  
-# 用法：
+### 用法：
 - 引入的是开发版autocomplete插件: <script src="xx/autocomplete.js"></script>
 - 引入的是压缩版autocomplete插件: <script src="xx/autocomplete.min.js"></script>
 - 引入的是压缩加密版autocomplete插件: <script src="xx/autocomplete.min.encrypt.js"></script>
@@ -36,7 +36,7 @@
    });
   注意：.box元素的position值必须为relative或者absolute,overflow不能为hidden
 ```
-# API：
+### API：
 ```js
   options: {
       width: '', //输入框宽度[必须, 类型: String]
