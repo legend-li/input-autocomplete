@@ -36,13 +36,14 @@
 -  注意：.box元素的position值必须为relative或者absolute,overflow不能为hidden
 
 # API：
-  options: {
-  	width: '', //输入框宽度[必须, 类型: String]
- 	height: '', //输入框高度[必须, 类型: String]
- 	placeholder: '', //输入框默认提示文案(placeholder属性)[可选, 类型: String]
-    onInput: '', //在输入框触发input事件的时候，执行的方法; [必须, 类型: Function]
-                 //该方法接收两个参数，第一个参数为key（当前输入框的值），第二个参数为appendList（接收一个参数list，该方法用来将接收到的提示关键字：list插入到input下面的下拉框中）
- 	callback: '', //在输入框内容改变时执行的回调函数，函数接受一个参数，参数值为输入框的value[必须, 类型: Function]
-  }
+-  options: {
+-  	width: '', //输入框宽度[必须, 类型: String]
+- 	height: '', //输入框高度[必须, 类型: String]
+- 	placeholder: '', //输入框默认提示文案(placeholder属性)[可选, 类型: String]
+-    onInput: '', //在输入框触发input事件的时候，执行的方法; [必须, 类型: Function]
+-                 //该方法接收两个参数，第一个参数为key（当前输入框的值），第二个参数为appendList（接收一个参数list，该方法用来将接收到的提示关键
+-                 //字：list插入到input下面的下拉框中）
+- 	callback: '', //在输入框内容改变时执行的回调函数，函数接受一个参数，参数值为输入框的value[必须, 类型: Function]
+-  }
 
 # 
